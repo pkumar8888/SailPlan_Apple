@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4649CF792DF0E3D3005A965C /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 4649CF782DF0E3D3005A965C /* Common */; };
+		4649CF7E2DF0E64D005A965C /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = 4649CF7D2DF0E64D005A965C /* Data */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4649CF642DF09A33005A965C /* SailPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SailPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4649CF762DF0E3C8005A965C /* Exceptions for "SailPlan" folder in "SailPlan" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/Common,
+				Core/Data,
+			);
+			target = 4649CF632DF09A33005A965C /* SailPlan */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4649CF662DF09A33005A965C /* SailPlan */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4649CF762DF0E3C8005A965C /* Exceptions for "SailPlan" folder in "SailPlan" target */,
+			);
 			path = SailPlan;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4649CF7E2DF0E64D005A965C /* Data in Frameworks */,
+				4649CF792DF0E3D3005A965C /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				4649CF662DF09A33005A965C /* SailPlan */,
+				4649CF772DF0E3D3005A965C /* Frameworks */,
 				4649CF652DF09A33005A965C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +65,13 @@
 				4649CF642DF09A33005A965C /* SailPlan.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4649CF772DF0E3D3005A965C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +94,8 @@
 			);
 			name = SailPlan;
 			packageProductDependencies = (
+				4649CF782DF0E3D3005A965C /* Common */,
+				4649CF7D2DF0E64D005A965C /* Data */,
 			);
 			productName = SailPlan;
 			productReference = 4649CF642DF09A33005A965C /* SailPlan.app */;
@@ -269,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.codesailor.apps.apple.SailPlan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -297,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.codesailor.apps.apple.SailPlan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -324,6 +355,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4649CF782DF0E3D3005A965C /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
+		4649CF7D2DF0E64D005A965C /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4649CF5C2DF09A33005A965C /* Project object */;
 }

@@ -7,9 +7,13 @@
 
 import SwiftUI
 import SwiftData
+import Data
 
 @main
 struct SailPlanApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
